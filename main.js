@@ -18,6 +18,8 @@ function setOperator(op) {
   if(currentInput === '') return;
   if(firstOperand === null) {
     firstOperand = parseFloat(currentInput);
+  } else if(operator) {
+    firstOperand = operate(firstOperand, parseFloat(currentInput), operator);
   }
 
   operator = op;
@@ -25,7 +27,7 @@ function setOperator(op) {
   updateDisplay();
 }
 
-function oparate(a, b, op) {
+function operate(a, b, op) {
   switch(op) {
     case '+': return a + b;
     case '-': return a - b;
