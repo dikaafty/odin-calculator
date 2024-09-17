@@ -48,6 +48,13 @@ function operate(a, b, op) {
   }
 }
 
+function clear() {
+  currentInput = '';
+  operator = null;
+  firstOperand = null;
+  updateDisplay();
+}
+
 function updateDisplay() {
   document.getElementById('display').value = currentInput;
 }
