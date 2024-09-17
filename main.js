@@ -15,10 +15,10 @@ function appendDecimal() {
 }
 
 function setOperator(op) {
-  if(currentInput === '') return;
-  if(firstOperand === null) {
+  if (currentInput === '') return;
+  if (firstOperand === null) {
     firstOperand = parseFloat(currentInput);
-  } else if(operator) {
+  } else if (operator) {
     firstOperand = operate(firstOperand, parseFloat(currentInput), operator);
   }
 
@@ -28,8 +28,8 @@ function setOperator(op) {
 }
 
 function calculate() {
-  if(operator === null || currentInput === '') return;
-  if(firstOperand === null) return;
+  if (operator === null || currentInput === '') return;
+  if (firstOperand === null) return;
 
   const result = operate(firstOperand, parseFloat(currentInput), operator);
   currentInput = result.toString();
@@ -48,7 +48,7 @@ function operate(a, b, op) {
     case '-': return a - b;
     case '×': return a * b;
     case '÷': return a / b;
-    default: return b;
+    default: return 'Error';
   }
 }
 
