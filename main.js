@@ -55,6 +55,11 @@ function clear() {
   updateDisplay();
 }
 
+function deleteLastChar() {
+  currentInput = currentInput.slice(0, -1);
+  updateDisplay();
+}
+
 function updateDisplay() {
   document.getElementById('display').value = currentInput;
 }
