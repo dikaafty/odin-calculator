@@ -52,7 +52,7 @@ function operate(a, b, op) {
   }
 }
 
-function clear() {
+function clearAll() {
   currentInput = '';
   operator = null;
   firstOperand = null;
