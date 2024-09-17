@@ -39,6 +39,10 @@ function calculate() {
 }
 
 function operate(a, b, op) {
+  if(op === '/' && b === 0) {
+    return 'Error'; // Handle division by zero
+  }
+
   switch(op) {
     case '+': return a + b;
     case '-': return a - b;
