@@ -12,3 +12,12 @@ body {
   background-color: #050505;
   height: 100vh;
 }
+
+.container {
+  background-color: #111111;
+  color: white;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 0 5px 1px #14f7ff;
+  border-radius: 5px;
+}
