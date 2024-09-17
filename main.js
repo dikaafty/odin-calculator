@@ -7,6 +7,13 @@ function appendNumber(num) {
   updateDisplay();
 }
 
+function appendDecimal() {
+  if(!currentInput.includes('.')) {
+    currentInput += '.';
+  }
+  updateDisplay();
+}
+
 function updateDisplay() {
   document.getElementById('display').value = currentInput;
 }
