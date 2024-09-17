@@ -35,3 +35,61 @@ body {
   border: none;
   color: white;
 }
+
+.row-one,
+.row-two,
+.row-three,
+.row-four,
+.row-five {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.row-one button,
+.row-two button,
+.row-three button,
+.row-four button,
+.period,
+.equal {
+  width: 115px;
+  height: 70px;
+  margin-bottom: 12px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 2px solid #14f7ff;
+  background-color: transparent;
+  color: #14f7ff;
+  position: relative;
+}
+
+.zero {
+  width: 240px;
+  height: 70px;
+  margin-bottom: 12px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 2px solid #14f7ff;
+  background-color: transparent;
+  color: #14f7ff;
+  position: relative;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #14f7ff;
+  border-radius: 2px;
+  box-shadow: 0 0 2em #14f7ff;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+
+button:hover::after {
+  opacity: 1;
+}
