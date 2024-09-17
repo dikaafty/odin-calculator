@@ -21,3 +21,17 @@ body {
   box-shadow: 0 0 5px 1px #14f7ff;
   border-radius: 5px;
 }
+
+#display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 500px;
+  height: 90px;
+  font-size: 35px;
+  text-align: end;
+  padding-right: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+}
