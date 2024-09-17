@@ -14,6 +14,17 @@ function appendDecimal() {
   updateDisplay();
 }
 
+function setOperator(op) {
+  if(currentInput === '') return;
+  if(firstOperand === null) {
+    firstOperand = parseFloat(currentInput);
+  }
+
+  operator = op;
+  currentInput = '';
+  updateDisplay();
+}
+
 function updateDisplay() {
   document.getElementById('display').value = currentInput;
 }
