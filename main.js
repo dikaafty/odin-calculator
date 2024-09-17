@@ -25,6 +25,16 @@ function setOperator(op) {
   updateDisplay();
 }
 
+function oparate(a, b, op) {
+  switch(op) {
+    case '+': return a + b;
+    case '-': return a - b;
+    case '×': return a * b;
+    case '÷': return a / b;
+    default: return b;
+  }
+}
+
 function updateDisplay() {
   document.getElementById('display').value = currentInput;
 }
