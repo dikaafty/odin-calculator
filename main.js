@@ -27,6 +27,17 @@ function setOperator(op) {
   updateDisplay();
 }
 
+function calculate() {
+  if(operator === null || currentInput === '') return;
+  if(firstOperand === null) return;
+
+  const result = operate(firstOperand, parseFloat(currentInput), operator);
+  currentInput = result.toString();
+  operator = null;
+  firstOperand = null;
+  updateDisplay();
+}
+
 function operate(a, b, op) {
   switch(op) {
     case '+': return a + b;
