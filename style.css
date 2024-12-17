@@ -33,3 +33,11 @@ body {
   border-radius: 5px;
   text-align: right;
 }
+
+.button-container {
+  width: 91%;
+  height: 330px;
+  background-color: #393E46;
+  margin-top: 40px;
+  border-radius: 5px;
+}
