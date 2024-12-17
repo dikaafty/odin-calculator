@@ -131,3 +131,7 @@ equalsBtn.addEventListener("click", () => {
 deleteBtn.addEventListener("click", () => {
   deleteNumber();
 });
+
+clearBtn.addEventListener("click", () => {
+  clear();
+});
