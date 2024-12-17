@@ -111,3 +111,19 @@ function clear() {
 }
 
 // Event Listeners
+
+equalsBtn.addEventListener("click", () => {
+  if(operator && firstOperand && secondOperand) {
+    const result = operate(operator, secondOperand, firstOperand);
+    secondOperand = result;
+    display.textContent = secondOperand;
+
+    if(operator === "÷" && firstOperand === "0" || firstOperand === "0.") {
+      clear();
+      display.textContent = "LOL";
+    }
+
+    firstOperand = "";
+    operator = null;
+  }
+});
