@@ -85,3 +85,12 @@ body {
   transform: translateY(3px);
   box-shadow: none;
 }
+
+.first-row button:last-of-type,
+.second-row button:last-of-type,
+.third-row button:last-of-type,
+.fourth-row button:last-of-type {
+  width: 110px;
+  background-color: #00ADB5;
+  color: #EEEEEE;
+}
