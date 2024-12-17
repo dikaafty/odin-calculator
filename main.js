@@ -102,3 +102,10 @@ function deleteNumber() {
     display.textContent = "0";
   }
 }
+
+function clear() {
+  firstOperand = "";
+  secondOperand = "";
+  operator = null;
+  display.textContent = "0";
+}
