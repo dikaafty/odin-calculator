@@ -8,3 +8,8 @@ const clearBtn = document.querySelector(".clear-btn");
 let firstOperand = "";
 let secondOperand = "";
 let operator = null;
+
+// Functions
+function add(a, b) {
+  return a + b;
+}
