@@ -74,6 +74,20 @@ function getOp(op) {
   operator = op;
 }
 
+function populateDisplay(num) {
+  if(num === "."  && firstOperand.length === 0) firstOperand = "0";
+
+  if(num === "." && firstOperand.includes(".")) return;
+
+  if(firstOperand === "") {
+    firstOperand = num; 
+  } else {
+    firstOperand += num;
+  }
+
+  updateDisplay();
+}
+
 function updateDisplay() {
   display.textContent = firstOperand;
 }
