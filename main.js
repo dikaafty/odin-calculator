@@ -73,3 +73,7 @@ function getOp(op) {
 
   operator = op;
 }
+
+function updateDisplay() {
+  display.textContent = firstOperand;
+}
