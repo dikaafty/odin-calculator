@@ -109,3 +109,5 @@ function clear() {
   operator = null;
   display.textContent = "0";
 }
+
+// Event Listeners
