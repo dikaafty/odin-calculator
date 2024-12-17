@@ -56,3 +56,20 @@ function operate(operator, num1, num2) {
     return result;
   }
 }
+
+function getOp(op) {
+  if(operator && firstOperand && secondOperand) {
+      secondOperand = operate(operator, secondOperand, firstOperand);
+      display.textContent = secondOperand;
+
+      firstOperand = "";
+  } else {
+    if(firstOperand) {
+  
+      secondOperand = firstOperand;
+      firstOperand = "";
+    }
+  }
+
+  operator = op;
+}
