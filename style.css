@@ -76,3 +76,12 @@ body {
   background-color: #00ADB5;
   color: #EEEEEE;
 }
+
+.first-row button:active,
+.second-row button:active,
+.third-row button:active,
+.fourth-row button:active,
+.fifth-row button:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
