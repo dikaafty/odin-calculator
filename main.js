@@ -25,3 +25,34 @@ function multiply(a, b) {
 function divide(a, b) {
   return a / b;
 }
+
+function operate(operator, num1, num2) {
+  num1 = parseFloat(num1);
+  num2 = parseFloat(num2);
+  let result;
+
+  switch(operator) {
+    case "+":
+      result = add(num1, num2);
+      break;
+
+    case "-":
+      result = subtract(num1, num2);
+      break;
+
+    case "×":
+      result = multiply(num1, num2);
+      break;
+
+    case "÷":
+      result = divide(num1, num2);
+      break;
+  }
+
+  // Handle if result is float or integer
+  if(Number(result) === result && result % 1 !== 0) {
+    return parseFloat(result.toPrecision(8));
+  } else {
+    return result;
+  }
+}
