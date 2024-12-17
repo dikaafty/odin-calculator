@@ -91,3 +91,14 @@ function populateDisplay(num) {
 function updateDisplay() {
   display.textContent = firstOperand;
 }
+
+function deleteNumber() {
+  if(firstOperand && firstOperand !== "0") {
+    firstOperand = firstOperand.slice(0, -1);
+    updateDisplay();
+  } 
+  
+  if(display.textContent === "") {
+    display.textContent = "0";
+  }
+}
